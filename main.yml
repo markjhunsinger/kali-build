@@ -5,7 +5,7 @@
   tasks:
   roles:
     - role: "roles/update-upgrade"
-    - role: "roles/configure-system"
+    #- role: "roles/configure-system"
     - role: "roles/install-tools"
       users:
         - username: "{{ ansible_user_id }}" 
