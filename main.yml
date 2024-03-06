@@ -7,6 +7,5 @@
     - role: "roles/update-upgrade"
     - role: "roles/configure-system"
     - role: "roles/install-tools"
-    - role: "roles/customize-browser"
       users:
         - username: "{{ ansible_user_id }}" 
