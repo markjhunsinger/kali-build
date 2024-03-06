@@ -6,4 +6,5 @@
 - Add local bin folder to PATH variable using `export PATH=$PATH:~/.local/bin`
 - Clone this repo using `git clone`
 - Change directory to `kali-build`
+- Make sure we have a sudo token `sudo whoami`
 - Run the commands in `commands.txt`
