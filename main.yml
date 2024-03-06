@@ -1,0 +1,12 @@
+---
+- name: Kali Build
+  hosts: localhost
+  connection: local
+  tasks:
+  roles:
+    - role: "roles/update-upgrade"
+    - role: "roles/install-tools"
+    - role: "roles/customize-browser"
+    - role: "roles/configure-sudoers"
+      users:
+        - username: "{{ ansible_user_id }}" 

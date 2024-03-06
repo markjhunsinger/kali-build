@@ -1,0 +1,16 @@
+---  
+- name: "Installing Packages"
+  package:
+    name:
+      - open-vm-tools
+      - gobuster
+      - feroxbuster
+      - seclists
+      - testssl.sh
+      - docker.io
+      - golang-go
+      - neovim
+      - snmp-mibs-downloader
+    state: latest
+  become: true
+  become_method: sudo
