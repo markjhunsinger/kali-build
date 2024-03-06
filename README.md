@@ -1,4 +1,5 @@
 # Building Kali with Ansible
+Install Ansible using `pip` by following the steps [here](https://docs.ansible.com/ansible/2.9/installation_guide/intro_installation.html#installing-ansible-with-pip)
 
 ## Instructions
 - Start Kali
