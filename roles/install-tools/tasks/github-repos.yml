@@ -10,7 +10,7 @@
   become_method: sudo
 
 - name: Create temporary build directory
-  ansible.builtin.tempfile:
+  tempfile:
     state: directory
   register: build_dir
 
@@ -40,7 +40,7 @@
   become_method: sudo
 
 - name: Remove temporary build directory
-  ansible.builtin.file:
+  file:
     path: "{{ build_dir.path }}"
     state: absent
   when: build_dir.path is defined

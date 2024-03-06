@@ -27,7 +27,7 @@
   when: burp_cert.stat.exists == False
 
 - name: Create directory for Burp Suite extras
-  ansible.builtin.file:
+  file:
     path: "{{ burpsuite_extras_dir }}"
     state: directory
     mode: '0755'
@@ -35,7 +35,7 @@
   become_method: sudo
 
 - name: Download jar files
-  ansible.builtin.get_url:
+  get_url:
     url: "{{ item.value.url }}"
     dest: "{{ burpsuite_extras_dir }}/{{ item.value.jar }}"
     checksum: "{{ item.value.checksum }}"
